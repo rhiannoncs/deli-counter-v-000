@@ -13,3 +13,10 @@ def take_a_number(array, customer)
   array << customer
   puts "Welcome, #{customer}. You are number #{array.index(customer) + 1} in line."
 end
+
+def now_serving(array)
+  if array.length > 0
+    puts "Currently serving #{array.shift}."
+  else
+    puts "There is nobody waiting to be served!"
+end
